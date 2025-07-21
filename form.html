@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="form.html" method="post" enctype="multipart/form-data">
+
+        <h1>Profile</h1><br>
+
+        <label for="name">UserName</label>
+        <input type="text" name="name" id="name" placeholder="Enter Your Name">
+        <br><br>
+
+        <label for="password">Passowrd</label>
+        <input type="password" name="password" id="password" placeholder="Enter Your Password">
+        <br><br>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter Your Email">
+        <br><br>
+
+        <label for="phone">Phone</label>
+        <input type="tel" name="phone" id="phone" placeholder="Enter Your Phone Number">
+        <br><br>
+
+        <label for="note_element_id">Note</label>
+        <textarea name="form_name" id="note_element_id" placeholder="Write something about us"></textarea>
+        <br><br>
+
+        <label for="date">Date</label>
+        <input type="date" name="date" id="date">
+        <br><br>
+
+        <label for="gender">Select Gender</label><br><br>
+        <input type="radio" name="gender" value="male" id="male">
+        <label for="male">Male</label>
+        <br><br>
+
+        <input type="radio" name="gender" value="female" id="female">
+        <label for="female">Female</label>
+        <br><br>
+
+        <input type="radio" name="gender" value="other" id="other" checked>
+        <label for="other">Other</label><br>
+        <br>
+
+        <label for="languages">Select Langugae</label><br><br>
+        <input type="checkbox" name="languages" value="eng" id="eng">
+        <label for="eng">English</label><br><br>
+        
+        <input type="checkbox" name="languages" value="chinese" id="chinese">
+        <label for="chinese">Chinese</label><br><br>
+
+        <input type="checkbox" name="languages" id="Thai" value="Thai" checked>
+        <label for="Thai">Thailand</label><br><br>
+
+        <label for="country">Select Country</label><br><br>
+        <select name="country">
+            <option value="Bkk">Bangkok</option>
+            <option value="Ygn">Yangon</option>
+            <option value="Sgn">Singapore</option>
+        </select><br><br>
+
+        <label for="file_upload">File Upload</label>
+        <input type="file" name="file" id="file"><br><br>
+
+       <button type="submit">Submit</button>
+        <input type="reset" value="reset">
+    </form>
+</body>
+</html>

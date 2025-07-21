@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Unit Converter</title>
+  <link rel="stylesheet" href="converter.css">
+</head>
+<body>
+
+<div class="converter">
+  <h2>Unit Converter</h2>
+
+  <label>Enter Value:</label>
+  <input type="number" class="value" id="inputValue" placeholder="Enter value">
+
+  <label>Convert:</label>
+  <select id="conversionType">
+    <option value="length">Meters to Feet</option>
+    <option value="height">Centimeters to Inches</option>
+    <option value="temperature">Celsius to Fahrenheit</option>
+    <option value="area">Square Meters to Square Feet</option>
+  </select>
+
+  <button onclick="convert()">Convert</button>
+
+  <p id="result"></p>
+</div>
+
+<script>
+  function convert() {
+    let value = parseFloat(document.getElementById("inputValue").value);
+    let type = document.getElementById("conversionType").value;
+    let result = "";
+
+    if (isNaN(value)) {
+      result = "Please enter a valid number.";
+    } else {
+      switch (type) {
+        case "length":
+          result = value + " meters = " + (value * 3.28084).toFixed(2) + " feet";
+          break;
+        case "height":
+          result = value + " cm = " + (value / 2.54).toFixed(2) + " inches";
+          break;
+        case "temperature":
+          result = value + " °C = " + ((value * 9/5) + 32).toFixed(2) + " °F";
+          break;
+        case "area":
+          result = value + " m² = " + (value * 10.7639).toFixed(2) + " ft²";
+          break;
+      }
+    }
+
+    document.getElementById("result").innerHTML = result;
+  }
+</script>
+
+</body>
+</html>

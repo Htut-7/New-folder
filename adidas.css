@@ -1,0 +1,158 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.headcontent{
+    max-width: 1024px;
+    margin: 0px auto;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.logocontainer {
+   width: 70px;
+   height: 30px;
+}
+
+.logo {
+    width: 100%;         
+}
+
+.menu{
+    width: 80%;
+}
+
+.menuitems{
+    text-decoration: none;
+    margin-left: 30px;
+    color: #000;
+    font-weight: bold;
+}
+
+.menuitems:hover{
+    border-bottom: 2px solid #000;
+}
+
+.login{
+    margin: 0px 30px;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    outline: none;
+    border: 1px solid transparent;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+.login:hover{
+    color: #fff;
+    font-weight: bold;
+    background-color: #000;
+}
+
+.openaccount{
+    margin: 0px 5px;
+    width: 110px;
+    height: 40px;
+    border-radius: 20px;
+    outline: none;
+    border: 1px solid #dfdfdf;
+    font-weight: bold;
+    font-size: 11px;
+    background-color: #000;
+    color: #fff;
+}
+
+.openaccount:hover{
+    color: #000;
+    background-color: #fff;
+    font-weight: bold;
+    border: 1px solid transparent;
+}
+
+.bodycontent{
+    width: 100%;
+   
+}
+
+.left{
+    width: 49%;
+    display: inline-block;
+   
+}
+
+.right{
+    width: 49%;
+    
+    display: inline-block;
+}
+
+.row{
+    display: flex;
+  align-items: center; /* vertically align */
+  justify-content: space-between; /* space between left and right */
+  gap: 40px; /* optional spacing between left and right */
+  padding: 20px;
+}
+
+.innertitle{
+    padding: 10px;
+    font-size: 80px;
+    font-weight: normal;
+    margin: 50px 0;
+    line-height: 1;
+}
+
+.desc {
+    margin: 0;
+    line-height: 1;
+    padding: 0 30px;
+    font-size: 19px;
+    color: #808080;
+    font-weight: bold;
+}
+
+.open{
+    margin: 30px 30px;
+    width: 30%;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 13px;
+    outline: none;
+    border: 1px solid #808080;
+    background-color: #fedc37;
+    font-weight: bold;
+}
+
+.generate{
+    width: 30%;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 13px;
+    outline: none;
+    border: 1px solid #808080;
+    background-color: #ffffff;
+    font-weight: bold;
+}
+
+.open:hover{
+    color: #000;
+    background-color: #ffffff;
+    border: none;
+}
+
+
+.generate:hover{
+   color: #fff;
+   background-color: #000;
+}
+
+
+.image{
+    width: 100%;
+}

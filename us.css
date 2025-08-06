@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mainheader{
+    max-width: auto;
+    margin: 0 auto;
+    border: 1px solid #dfdfdf;
+    top: 0;
+    position: sticky;
+    background-color: #ffffff;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 15px 30px;
+}
+
+.logocontainer{
+    display: flex;
+    align-items: center;
+    width: 60px;
+}
+
+.logo{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    flex:  1 1 auto;
+}
+
+.menuitems{
+    text-decoration: none;
+    display: flex;
+    color: #000;
+    font-size: 16px;
+}
+
+.menuitems:hover{
+    border-bottom: 2px solid #000;
+}
+
+.headeractions{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex: 0 0 auto;
+}
+
+i:hover{
+    color: red;
+}
+
+.body{
+    display: flex;
+    margin: 50px auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.left{
+    width: 35%;
+    display: inline-block;
+}
+
+.leftimg{
+    width: 55%;
+    height: auto;
+}
+
+.right{
+    width: 17%;
+    display: inline-block;
+}
+
+.title{
+    margin-bottom: 15px;
+    font-size: 50px;
+}
+
+.desc{
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.say{
+    width: 60%;
+    height: 50px;
+    border-radius: 20px;
+    outline: none;
+    border: 1px solid #000;
+    background-color: #ffffff;
+    font-size: 17px;
+}
+
+.say:hover{
+    color: #ffffff;
+    background-color: #000;
+}
+
+
+

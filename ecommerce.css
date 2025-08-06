@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mainheader{
+    max-width: auto;
+    margin: 0 auto;
+    border: 1px solid #dfdfdf;
+    background-color: #ffffff;
+    top: 0;
+    position: sticky;
+    z-index: 100px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.logocontainer{
+    display: flex;
+    width: 60px;
+    align-items: center;
+}
+
+.logo{
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex: 1 1 auto;
+    flex-wrap: wrap;
+}
+
+.menuitems{
+    text-decoration: none;
+    font-size: 14px;
+    color: #000;
+    display: flex;
+    margin: 10px 30px;
+}
+
+.menuitems:hover{
+    border-bottom: 1px solid #000;
+}
+
+.headeractions{
+    display: flex;
+    gap: 10px;
+    flex: 0 0 auto;
+    align-items: center;
+}
+
+.search{
+    width: 150px;
+    padding: 6px 10px;
+    border-radius: 10px;
+    border: 1px solid #dfdfdf;
+}
+
+.search:focus{
+    outline: none;
+    border: 1px solid #dfdfdf;
+    width: 200px;
+    transition: all 0.3s ease-in-out;
+}
+
+.leave{
+    width: 30%;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.leave:hover{
+    color: red;
+}
+
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 60px auto;
+}
+
+.left{
+    display: inline-block;
+    width: 40%;
+}
+
+.title{
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.desc{
+    font-size: 14px;
+    color: #808080;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.shop{
+    width: 50%;
+    height: 50px;
+    border-radius: 20px;
+    outline: none;
+    border: 1px solid #dfdfdf;
+    background-color: #000;
+    color: #ffffff;
+    font-size: 14px;
+    font-style: italic;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.shop:hover{
+    color: #000;
+    background-color: #ffffff;
+}
+
+.right{
+    display: inline-block;
+    width: 50%;
+}
+
+.rightimg{
+    display: inline-block;
+    width: 90%;
+    height: 10%;
+    border-radius: 20px;
+    box-shadow: #dfdfdf 50px 20px 50px 20px;
+}
+
+

@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px 30px;
+    gap: 20px;
+}
+
+.logocontainer{
+    display: flex;
+    align-items: center;
+    width: 65px;
+}
+
+.logo{
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+}
+
+.menuitems{
+    text-decoration: none;
+    font-size: 14px;
+    color: #000;
+    display: flex;
+    margin: 10px 30px;
+}
+
+.menuitems:hover{
+    color: #dfdfdf;
+}
+
+.headeractions{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 0 0 auto;
+    gap: 10px;
+}
+
+.search{
+    width: 150px;
+    height: 25px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #000;
+    padding: 1px 6px;
+    display: flex;
+}
+
+.search:focus{
+    width: 200px;
+    transition: all 0.3s ease;
+}
+
+.search::placeholder{
+    font-size: 11px;
+    font-style: italic;
+    color: #000;
+}
+
+.scope{
+    font-size: 20px;
+    display: flex;
+}
+
+.leave{
+    font-size: 20px;
+    display: flex;
+}
+
+.leave:hover{
+    color: red;
+}
+

@@ -16,19 +16,39 @@
     <label for="paid">Amount Paid:</label>
     <input type="number" id="paid" placeholder="Enter amount given" />
 
-    <button onclick="calculateChange()">Calculate</button>
+    <div style="margin-top:10px;">
+      <button onclick="calculateChange()">Calculate</button>
+      <button onclick="goBack()">Back</button>
+    </div>
 
     <div id="result"></div>
   </div>
 
   <script>
     function calculateChange() {
-      const cost = parseFloat(document.getElementById("cost").value);
-      const paid = parseFloat(document.getElementById("paid").value);
+      const costInput = document.getElementById("cost").value.trim();
+      const paidInput = document.getElementById("paid").value.trim();
+      const cost = parseFloat(costInput);
+      const paid = parseFloat(paidInput);
       const result = document.getElementById("result");
 
+      // Empty input check
+      if (costInput === "" || paidInput === "") {
+        result.textContent = "⚠ Please enter both values.";
+        result.style.color = "red";
+        return;
+      }
+
+      // Invalid number check
       if (isNaN(cost) || isNaN(paid)) {
-        result.textContent = "Please enter valid numbers.";
+        result.textContent = "⚠ Please enter valid numbers.";
+        result.style.color = "red";
+        return;
+      }
+
+      // Negative number check
+      if (cost < 0 || paid < 0) {
+        result.textContent = "⚠ Values cannot be negative.";
         result.style.color = "red";
         return;
       }
@@ -42,6 +62,11 @@
         result.textContent = `Change: ${change.toFixed(2)}`;
         result.style.color = "green";
       }
+    }
+
+    // Back button function
+    function goBack() {
+      window.location.href = "";
     }
   </script>
 </body>
